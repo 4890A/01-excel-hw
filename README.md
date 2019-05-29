@@ -4,11 +4,11 @@
 
 1. Of the technology based kickstarters, wearables are the most competetive product on the platform, (excluding the 0 successes sub-catagories). Wearables are both the most abundant in this catagory, but also the least successful on average.
 
-   ![image-20190529163916936](/Users/shujinkou/Code/bootcamp/Personal-DataViz/02-Homework/01-Excel/Instructions/01-excel-hw/sub-tech.png)
+   ![sub-tech](images/sub-tech.png)
 
 2. Late-Spring to Midsummer is the most popular time to start a kickstarter, that being said, the amount of failures grow steadily with the number of successes during this period. There is a notacable peak in cancelled projects corresponding to the end of this run. The platform sees another slight growth in usage in November, but a decrease in usage entering the holiday season.
 
-   ![image-20190529164031502](/Users/shujinkou/Code/bootcamp/Personal-DataViz/02-Homework/01-Excel/Instructions/01-excel-hw/month_analysis.png)
+   ![month_analysis](images/month_analysis.png)
 
 3. Food based kickstarters are largely unsuccessful. Since two of the three categories, food trucks and restaurants have never seen a success, It is reasonable to conclude that  users seek tangible rewards for their investments (which would be difficult to provide through traditional restaurants and businesses). Alternatively, the small batch food kickstarters are overwhelmingly successful with 100% reaching their goal. This could be a reflection of the easier access to food product rewards from small batch funding. 
 
@@ -25,9 +25,9 @@
 
 * Average "Average amount pledged" per catagory. Technology likly leads this metric because technology campagins can offer their product as a (large) pledge incentive.
 
-  ![image-20190529164255692](/Users/shujinkou/Code/bootcamp/Personal-DataViz/02-Homework/01-Excel/Instructions/01-excel-hw/avg_pledge.png)
+  ![image-20190529164255692](images/avg_pledge.png)
 
 * This chart analyzes the performance of campaigns that have been featured on the "Projects We Love" page on kickstarter. This page is curated by kickstarter staff. As expected, projects featured on this page are significantly more successful on average. While non-featured projects have more than a 50% chance of failing, only an eight of featured projects failed.
 
-  ![image-20190529165917014](/Users/shujinkou/Code/bootcamp/Personal-DataViz/02-Homework/01-Excel/Instructions/01-excel-hw/staff_pick.png)
+  ![image-20190529165917014](images/staff_pick.png)
 
