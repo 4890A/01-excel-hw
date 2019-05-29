@@ -1,93 +1,33 @@
-# Unit 1 | Assignment - KickStart My Chart
+# HW_01 Response
 
-## Background
+### Conclusions
 
-Over two billion dollars have been raised using the massively successful crowdfunding service, Kickstarter, but not every project has found success. Of the over 300,000 projects launched on Kickstarter, only a third have made it through the funding process with a positive outcome.
+1. Of the technology based kickstarters, wearables are the most competetive product on the platform, (excluding the 0 successes sub-catagories). Wearables are both the most abundant in this catagory, but also the least successful on average.
 
-Since getting funded on Kickstarter requires meeting or exceeding the project's initial goal, many organizations spend months looking through past projects in an attempt to discover some trick to finding success. For this week's homework, you will organize and analyze a database of four thousand past projects in order to uncover any hidden trends.
+   ![image-20190529163916936](/Users/shujinkou/Code/bootcamp/Personal-DataViz/02-Homework/01-Excel/Instructions/01-excel-hw/sub-tech.png)
 
-## Instructions
+2. Late-Spring to Midsummer is the most popular time to start a kickstarter, that being said, the amount of failures grow steadily with the number of successes during this period. There is a notacable peak in cancelled projects corresponding to the end of this run. The platform sees another slight growth in usage in November, but a decrease in usage entering the holiday season.
 
-![Kickstarter Table](Images/FullTable.PNG)
+   ![image-20190529164031502](/Users/shujinkou/Code/bootcamp/Personal-DataViz/02-Homework/01-Excel/Instructions/01-excel-hw/month_analysis.png)
 
-* Using the Excel table provided, you will be modifying and analyzing the data of four thousand past Kickstarter projects as you attempt to uncover some of the market trends.
+3. Food based kickstarters are largely unsuccessful. Since two of the three categories, food trucks and restaurants have never seen a success, It is reasonable to conclude that  users seek tangible rewards for their investments (which would be difficult to provide through traditional restaurants and businesses). Alternatively, the small batch food kickstarters are overwhelmingly successful with 100% reaching their goal. This could be a reflection of the easier access to food product rewards from small batch funding. 
 
-* Use conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was "successful," "failed," "cancelled," or is currently "live".
 
-* Create a new column at column O called `percent funded` that uses a formula to uncover how much money a campaign made towards reaching its initial goal.
 
-  * Use conditional formatting to fill each cell in the `percent funded` column using a three-color scale. The scale should start at 0 and be a dark shade of red, transitioning to green at 100, and then moving towards blue at 200.
+### Limitations
 
-* Create a new column at column P called `average donation` that uses a formula to uncover how much each backer for the project paid on average.
+1. Kickstarter pledge rewards are an important factor that determines whether or not users will pledge for products. It would be interesting to study how the distribution of rewards and pricepoints of rewards impact the success of a kickstarter campaign. Similarly, if the distribution of pledge amounts were available, the relationship between pledge distribution and pledge rewards can be studied. 
+2. It would be interesting to see how many views a particular campaign received, and through what avenues the view was accumulated (social media, web advertising, etc.). This data is useful for optimizing campaign exposure, and growing the platform overall. This would also allow for a metric of pledges/viewer.
 
-* Create two new columns, one called `category` at Q and another called `sub-category` at R, which use formulas to split the `Category and Sub-Category` column into two parts.
 
-  ![Category Stats](Images/CategoryStats.PNG)
 
-  * Create a new sheet with a pivot table that will analyze your initial worksheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **category**.
+### Extra Charts to Consider
 
-    * Create a stacked column pivot chart that can be filtered by `country` based on the table you have created.
+* Average "Average amount pledged" per catagory. Technology likly leads this metric because technology campagins can offer their product as a (large) pledge incentive.
 
-  ![Subcategory Stats](Images/SubcategoryStats.PNG)
+  ![image-20190529164255692](/Users/shujinkou/Code/bootcamp/Personal-DataViz/02-Homework/01-Excel/Instructions/01-excel-hw/avg_pledge.png)
 
-  * Create a new sheet with a pivot table that will analyze your initial sheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **sub-category**.
+* This chart analyzes the performance of campaigns that have been featured on the "Projects We Love" page on kickstarter. This page is curated by kickstarter staff. As expected, projects featured on this page are significantly more successful on average. While non-featured projects have more than a 50% chance of failing, only an eight of featured projects failed.
 
-    * Create a stacked column pivot chart that can be filtered by `country` and `parent-category` based on the table you have created.
-
-* The dates stored within the `deadline` and `launched_at` columns are using unix timestamps. Fortunately for us, [there is a formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) out there that can be used to convert these timestamps into a normal date.
-
-  * Create a new column named `Date Created Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `launched_at` into Excel's Date format
-
-  * Create a new column named `Date Ended Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `deadline` into Excel's Date format
-
-  ![Outcomes Based on Launch Date](Images/LaunchDateOutcomes.PNG)
-
-  * Create a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
-
-  * Now create a pivot chart line graph that visualizes this new table.
-
-* Create a report in Microsoft Word and answer the following questions...
-
-1. What are three conclusions we can make about Kickstarter campaigns given the provided data?
-2. What are some of the limitations of this dataset?
-   1. investment incentives? Donation distribution.
-3. What are some other possible tables/graphs that we could create?
-   1. Anlysis on goal price vs. state.
-
-## Bonus
-
-* Create a new sheet with 8 columns: `Goal`, `Number Successful`, `Number Failed`, `Number Canceled`, `Total Projects`, `Percentage Successful`, `Percentage Failed`, and `Percentage Canceled`
-
-  * In the `goal` column, create twelve rows with the following headers...
-
-    * Less Than 1000
-    * 1000 to 4999
-    * 5000 to 9999
-    * 10000 to 14999
-    * 15000 to 19999
-    * 20000 to 24999
-    * 25000 to 29999
-    * 30000 to 34999
-    * 35000 to 39999
-    * 40000 to 44999
-    * 45000 to 49999
-    * Greater than or equal to 50000
-
-    ![Goal Outcomes](Images/GoalOutcomes.PNG)
-
-  * Using the `COUNTIFS()` formula, count how many successful, failed, and canceled projects were created with goals within those ranges listed above. Populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
-
-  * Add up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematic formulae, find the percentage of projects which were successful, failed, or were canceled per goal range.
-
-  * Create a line chart which graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
-
-## Submission
-
-* To submit, please upload the solution and files to a Github repo, dropbox, or google drive and submit the link to <https://bootcampspot.com/>.
-
-- - -
-
-### Copyright
-
-Trilogy Education Services © 2017. All Rights Reserved.
+  ![image-20190529165917014](/Users/shujinkou/Code/bootcamp/Personal-DataViz/02-Homework/01-Excel/Instructions/01-excel-hw/staff_pick.png)
 
