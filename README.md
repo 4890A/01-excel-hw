@@ -37,6 +37,6 @@
 
 ### Bonus
 
-![image-20190529225558505](../Images/bonus.png)
+![image-20190529225558505](images/bonus.png)
 
 * In general, kickstarters with higher goals have a lower chance of hitting their goal
