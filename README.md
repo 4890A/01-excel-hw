@@ -23,11 +23,20 @@
 
 ### Extra Charts to Consider
 
-* Average "Average amount pledged" per catagory. Technology likly leads this metric because technology campagins can offer their product as a (large) pledge incentive.
+* Average "Average amount pledged" per category. Technology likely leads this metric because technology campaigns can offer their product as a (large) pledge incentive.
 
-  ![image-20190529164255692](images/avg_pledge.png)
+  ![average](images/average.png)
+
+  
 
 * This chart analyzes the performance of campaigns that have been featured on the "Projects We Love" page on kickstarter. This page is curated by kickstarter staff. As expected, projects featured on this page are significantly more successful on average. While non-featured projects have more than a 50% chance of failing, only an eight of featured projects failed.
 
-  ![image-20190529165917014](images/staff_pick.png)
+  
 
+![staff_pick](images/staff_pick.png)
+
+### Bonus
+
+![image-20190529225558505](../Images/bonus.png)
+
+* In general, kickstarters with higher goals have a lower chance of hitting their goal
